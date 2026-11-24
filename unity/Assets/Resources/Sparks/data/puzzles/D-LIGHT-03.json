@@ -1,0 +1,30 @@
+{
+  "id": "D-LIGHT-03",
+  "kind": "door",
+  "door_type": "principle",
+  "spark": "lumi",
+  "zone": "archive",
+  "title": "두 거울의 모서리",
+  "input": {
+    "kind": "choice",
+    "options": ["온 길과 나란하게, 왔던 쪽으로 되돌아간다", "들어온 방향에서 90° 꺾인 쪽으로 나간다", "두 거울 사이를 끝없이 오가며 갇힌다", "비춘 각도에 따라 되돌아가기도 하고 옆으로 꺾여 나가기도 한다"]
+  },
+  "answer": "온 길과 나란하게, 왔던 쪽으로 되돌아간다",
+  "energy": 30,
+  "difficulty": 2,
+  "text": "평평한 거울 두 장을 바닥에 똑바로 세우고, 책을 직각으로 펼친 것처럼 한쪽 모서리를 맞붙였습니다.\n\n바닥과 나란하게 가는 빛줄기를 안쪽으로 비스듬히 비추었더니, 빛은 한쪽 거울에 먼저 닿고 이어서 다른 쪽 거울에 닿아 모두 두 번 반사되었습니다.\n\n두 번 반사된 빛은 들어온 빛과 견주어 어느 쪽으로 나갈까요?",
+  "hints": [
+    "거울에 닿은 빛은 들어간 각과 같은 각으로 튕겨 나옵니다.",
+    "종이에 직각으로 만나는 두 선을 긋고, 빛이 가는 길을 직접 그려 보세요. 각도를 바꿔 가며 두세 번 그려 보면 좋습니다.",
+    "거울 한 장은 빛이 가는 방향 가운데 그 거울을 향하던 쪽만 뒤집습니다. 직각으로 선 두 거울은 서로 다른 쪽을 하나씩 뒤집습니다.",
+    "앞뒤 방향과 좌우 방향이 모두 뒤집히면, 빛은 처음과 정반대 방향으로 갑니다."
+  ],
+  "explanation": "거울 한 장에 반사될 때마다 빛의 방향 가운데 그 거울을 향하던 성분만 뒤집힙니다. 직각으로 선 두 거울에 한 번씩 반사되면 두 성분이 모두 뒤집히므로, 빛은 어떤 각도로 비추었든 처음과 정반대 방향이 되어 온 길과 나란하게 되돌아갑니다. 자전거 반사판은 직각으로 만나는 작은 면 세 개를 써서, 어느 쪽에서 비추든 불빛을 비춘 쪽으로 되돌려 보냅니다.",
+  "knowledge": {
+    "parchment": "직각으로 맞붙은 두 거울은 빛을 온 길과 나란하게 되돌려 보낸다.",
+    "source": "OpenStax, College Physics 2e, 25.4 Total Internal Reflection — 'Corner Reflectors and Diamonds' (https://openstax.org/books/college-physics-2e/pages/25-4-total-internal-reflection) / OpenStax, University Physics Volume 3, 1.2 The Law of Reflection — 'Corner Reflectors' (https://openstax.org/books/university-physics-volume-3/pages/1-2-the-law-of-reflection)"
+  },
+  "verification": { "answer_unique": true, "fact_checked": true, "script": "tools/verify/D-LIGHT-03.py" },
+  "status": "reviewed",
+  "notes": "[검토 2026-11-10] 문제만 받은 별도 서브에이전트가 풀어 같은 답을 냈고, 사실 확인 전담 서브에이전트가 답·해설·힌트·출처를 확인했다. 지적과 고친 곳은 design/ch1-prototype.md 5절. 기획서 샘플. 2026-11-10 프로토타입 세션이 문장을 다듬음: (1) 빛이 바닥과 나란하다는 조건 추가(거울이 만나는 모서리 방향 성분은 뒤집히지 않으므로), (2) '두 번 반사되었다'를 문제에 못박음, (3) 선택지 표현을 분명히 하고 '각도에 따라 다르다'를 추가. 봉인의 문 셋째 고리. 다음 필드 퍼즐 F-LIGHT-02(빛을 되돌리기)와 이어짐."
+}

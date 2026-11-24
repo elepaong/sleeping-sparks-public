@@ -1,0 +1,64 @@
+{
+  "id": "moon_night",
+  "name": "달밤의 숲",
+  "status": "draft",
+  "base": "spring_day",
+  "note": "예시 스테이지. 같은 맵을 푸른 밤 팔레트로 굽고, 실행 중에는 어둡게 물들이고 반딧불과 등불을 켠다.",
+
+  "ramps": {
+    "mint": ["#4f8f96", "#69aaa6", "#86c2b6", "#b4e0d0"],
+    "sage": ["#5b8f8a", "#77a99a", "#96c2ac", "#c2e0c8"],
+    "teal": ["#4a7c9c", "#6496b2", "#84b2c8", "#b0d6e2"],
+    "moss": ["#5a9488", "#76ae9a", "#96c6ae", "#c0e2cc"],
+    "pink": ["#a884c0", "#c0a0d4", "#d8c0e6", "#eee0f6"],
+    "gold": ["#c8b684", "#dccb98", "#ece0b4", "#faf4d8"]
+  },
+
+  "ground": {
+    "grass": ["#6fa99a", "#7cb6a2", "#8cc4ac", "#9fd0b6", "#b2dcc2"],
+    "edge": ["#5f9a94", "#6fa99a", "#7cb6a2"],
+    "forest": ["#4f8690", "#598f96", "#63999c"],
+    "clover": ["#96ccba", "#d0f0e0"],
+    "path": ["#c9c4c0", "#d6d2cc", "#e2dfd8"],
+    "path_rim": "#b4aeb4",
+    "path_specks": ["#a8a2ac", "#f4f2ee"],
+    "shore": ["#b8bcb4", "#d0d4cc"],
+    "water": ["#5f96c8", "#6ea6d2", "#84b8dc", "#a8d2ea"],
+    "water_foam": "#e4f4fa",
+    "water_edge": "#6a9cc4",
+    "water_ripple": "#c4e4f4",
+    "dapple": {"color": "#e0ecff", "strength": 0.22, "color2": "#f0f6ff", "strength2": 0.12},
+    "tuft": ["#62a092", "#b4e0c8"],
+    "flower_center": "#f4f0d0",
+    "flower_ramps": ["lilac", "blue", "cream", "cream", "lilac"],
+    "pebble": ["#a8a8b4", "#c0c0cc", "#e0e0e8"],
+    "floor_fern": ["#487c84", "#74aaa4"],
+    "shadow": [0.82, 0.86, 0.96]
+  },
+
+  "areas": {
+    "A": {"tint": null, "mood": {"tint": "#a6aedc", "glowAlpha": 0.9}},
+    "B": {"tint": {"color": "#7c88c8", "strength": 0.30}, "mood": {"moteColor": "#ffc8f0"}},
+    "C": {"tint": {"color": "#88d0d8", "strength": 0.18}},
+    "D": {"tint": {"color": "#c8c0e8", "strength": 0.22}},
+    "E": {"tint": {"color": "#d8e4f4", "strength": 0.30}, "mood": {"tint": "#a8b4e4", "shaftAlpha": 0.8}}
+  },
+
+  "mood": {
+    "bg": "#39607a",
+    "tint": "#8f9bd6",
+    "haze": "#2a2f6a29",
+    "shaftColor": "#cfe0ff",
+    "shaftAlpha": 0.45,
+    "shaftAngle": 6,
+    "moteColor": "#e8ffb0",
+    "moteCount": 60,
+    "glowColor": "#ffe9a8",
+    "glowAlpha": 0.85,
+    "butterflies": 0,
+    "fall": [],
+    "fallMin": 1.0,
+    "fallMax": 2.0,
+    "lanternsLit": true
+  }
+}

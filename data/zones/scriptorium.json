@@ -1,0 +1,642 @@
+{
+  "id": "scriptorium",
+  "name_key": "zone.scriptorium.name",
+  "chapter": "prologue",
+  "background": "assets/backgrounds/scriptorium.png",
+  "walk_poly": [
+    [
+      44,
+      252
+    ],
+    [
+      1628,
+      252
+    ],
+    [
+      1628,
+      936
+    ],
+    [
+      44,
+      936
+    ]
+  ],
+  "spawns": {
+    "default": [
+      640,
+      800
+    ],
+    "from_archive": [
+      836,
+      900
+    ]
+  },
+  "on_enter": [
+    {
+      "if": {
+        "not_flag": "intro_done"
+      },
+      "do": [
+        {
+          "dialogue": "prologue_intro"
+        },
+        {
+          "set_flag": "intro_done"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "desk",
+      "type": "prop",
+      "name_key": "obj.desk_book",
+      "pos": [
+        566,
+        727
+      ],
+      "sprite": "assets/props/desk_book.png",
+      "interact": [
+        {
+          "if": {
+            "not_solved": "D-STATIC-01"
+          },
+          "do": [
+            {
+              "if": {
+                "not_flag": "omega_found"
+              },
+              "dialogue": "find_omega"
+            },
+            {
+              "set_flag": "omega_found"
+            },
+            {
+              "door_puzzle": "D-STATIC-01"
+            },
+            {
+              "give_spark": "jjirit"
+            },
+            {
+              "dialogue": "jjirit_awakens"
+            }
+          ]
+        },
+        {
+          "do": [
+            {
+              "dialogue": "desk_again"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wool_basket",
+      "type": "prop",
+      "pos": [
+        650,
+        734
+      ],
+      "sprite": "assets/props/wool_basket.png",
+      "label": false,
+      "name_key": "obj.wool_basket"
+    },
+    {
+      "id": "grate_key",
+      "type": "floor_grate",
+      "name_key": "obj.grate",
+      "pos": [
+        1476,
+        788
+      ],
+      "sprite": "assets/props/grate.png",
+      "placeable": true,
+      "targets": [
+        "iron_key"
+      ],
+      "no_reaction": "key_no_reaction",
+      "interact": [
+        {
+          "do": [
+            {
+              "dialogue": "grate_key_look"
+            }
+          ]
+        }
+      ],
+      "flat": true
+    },
+    {
+      "id": "iron_key",
+      "type": "iron_key",
+      "name_key": "obj.iron_key",
+      "pos": [
+        1476,
+        788
+      ],
+      "sprite": "assets/props/iron_key.png",
+      "label": false,
+      "flat": true
+    },
+    {
+      "id": "grate_scrap",
+      "type": "floor_grate",
+      "name_key": "obj.grate",
+      "pos": [
+        220,
+        788
+      ],
+      "sprite": "assets/props/grate.png",
+      "placeable": true,
+      "targets": [
+        "scrap"
+      ],
+      "interact": [
+        {
+          "if": {
+            "solved": "F-STATIC-01"
+          },
+          "do": [
+            {
+              "dialogue": "grate_empty"
+            }
+          ]
+        },
+        {
+          "do": [
+            {
+              "dialogue": "grate_scrap_look"
+            }
+          ]
+        }
+      ],
+      "flat": true
+    },
+    {
+      "id": "scrap",
+      "type": "paper_scrap",
+      "name_key": "obj.paper_scrap",
+      "pos": [
+        220,
+        788
+      ],
+      "sprite": "assets/props/paper_scrap.png",
+      "label": false,
+      "state": "in_gap",
+      "hidden_states": [
+        "attracted"
+      ],
+      "flat": true
+    },
+    {
+      "id": "spout",
+      "type": "prop",
+      "pos": [
+        1560,
+        254
+      ],
+      "sprite_offset": [
+        0,
+        -150
+      ],
+      "sprite": "assets/props/spout.png",
+      "label": false,
+      "name_key": "obj.spout"
+    },
+    {
+      "id": "fountain",
+      "type": "prop",
+      "name_key": "obj.fountain",
+      "pos": [
+        1550,
+        254
+      ],
+      "sprite": "assets/props/fountain.png",
+      "solid": [
+        96,
+        20
+      ],
+      "interact": [
+        {
+          "if": {
+            "solved": "F-STATIC-02"
+          },
+          "do": [
+            {
+              "dialogue": "fountain_done"
+            }
+          ]
+        },
+        {
+          "if": {
+            "solved": "D-STATIC-02"
+          },
+          "do": [
+            {
+              "dialogue": "fountain_ledges"
+            }
+          ]
+        },
+        {
+          "if": {
+            "solved": "F-STATIC-01"
+          },
+          "do": [
+            {
+              "if": {
+                "not_flag": "plate_seen"
+              },
+              "dialogue": "fountain_plate"
+            },
+            {
+              "set_flag": "plate_seen"
+            },
+            {
+              "door_puzzle": "D-STATIC-02"
+            },
+            {
+              "dialogue": "ledges_open"
+            }
+          ]
+        },
+        {
+          "do": [
+            {
+              "dialogue": "fountain_look"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stream",
+      "type": "water_stream",
+      "name_key": "obj.water_stream",
+      "pos": [
+        1550,
+        254
+      ],
+      "sprite_offset": [
+        0,
+        -52
+      ],
+      "label": false,
+      "sprites": {
+        "straight": "assets/props/stream_straight.png",
+        "bent_left": "assets/props/stream_left.png",
+        "bent_right": "assets/props/stream_right.png"
+      },
+      "state": "straight",
+      "on_state": {
+        "bent_right": [
+          {
+            "if": {
+              "not_solved": "F-STATIC-02"
+            },
+            "dialogue": "stream_wrong_side"
+          }
+        ]
+      },
+      "frames": 4,
+      "fps": 8
+    },
+    {
+      "id": "funnel",
+      "type": "prop",
+      "name_key": "obj.funnel",
+      "pos": [
+        1478,
+        254
+      ],
+      "sprite": "assets/props/funnel.png",
+      "solid": [
+        24,
+        12
+      ]
+    },
+    {
+      "id": "ledge_left",
+      "type": "stream_ledge",
+      "name_key": "obj.ledge_left",
+      "pos": [
+        1498,
+        254
+      ],
+      "sprite": "assets/props/ledge.png",
+      "visible_if": {
+        "solved": "D-STATIC-02"
+      },
+      "placeable": true,
+      "targets": [
+        "stream"
+      ],
+      "params": {
+        "side": "left"
+      },
+      "sprite_offset": [
+        0,
+        -112
+      ],
+      "place_offset": [
+        0,
+        -110
+      ]
+    },
+    {
+      "id": "ledge_right",
+      "type": "stream_ledge",
+      "name_key": "obj.ledge_right",
+      "pos": [
+        1602,
+        254
+      ],
+      "sprite": "assets/props/ledge.png",
+      "visible_if": {
+        "solved": "D-STATIC-02"
+      },
+      "placeable": true,
+      "targets": [
+        "stream"
+      ],
+      "params": {
+        "side": "right"
+      },
+      "sprite_offset": [
+        0,
+        -112
+      ],
+      "place_offset": [
+        0,
+        -110
+      ]
+    },
+    {
+      "id": "hatch",
+      "type": "prop",
+      "name_key": "obj.hatch",
+      "pos": [
+        836,
+        796
+      ],
+      "sprites": {
+        "closed": "assets/props/hatch_closed.png",
+        "open": "assets/props/hatch_open.png"
+      },
+      "state": "closed",
+      "flat": true,
+      "interact": [
+        {
+          "if": {
+            "solved": "F-STATIC-02"
+          },
+          "do": [
+            {
+              "goto_zone": "archive",
+              "spawn": "from_scriptorium"
+            }
+          ]
+        },
+        {
+          "do": [
+            {
+              "dialogue": "hatch_closed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ink_1",
+      "type": "ink",
+      "name_key": "obj.ink",
+      "pos": [
+        300,
+        590
+      ],
+      "sprite": "assets/props/ink_drop.png"
+    },
+    {
+      "id": "ink_2",
+      "type": "ink",
+      "name_key": "obj.ink",
+      "pos": [
+        1150,
+        880
+      ],
+      "sprite": "assets/props/ink_drop.png"
+    },
+    {
+      "id": "ink_3",
+      "type": "ink",
+      "name_key": "obj.ink",
+      "pos": [
+        1560,
+        520
+      ],
+      "sprite": "assets/props/ink_drop.png"
+    },
+    {
+      "id": "pillar_1",
+      "type": "prop",
+      "pos": [
+        1050,
+        732
+      ],
+      "sprite": "assets/props/pillar.png",
+      "solid": [
+        56,
+        20
+      ],
+      "label": false,
+      "name_key": "obj.pillar"
+    },
+    {
+      "id": "pillar_2",
+      "type": "prop",
+      "pos": [
+        680,
+        928
+      ],
+      "sprite": "assets/props/pillar.png",
+      "solid": [
+        56,
+        20
+      ],
+      "label": false,
+      "name_key": "obj.pillar"
+    },
+    {
+      "id": "pillar_3",
+      "type": "prop",
+      "pos": [
+        1250,
+        928
+      ],
+      "sprite": "assets/props/pillar.png",
+      "solid": [
+        56,
+        20
+      ],
+      "label": false,
+      "name_key": "obj.pillar"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "F-STATIC-01",
+      "name_key": "fpuzzle.F-STATIC-01.name",
+      "learned_from": "D-STATIC-01",
+      "solved_when": [
+        {
+          "object": "scrap",
+          "state": "attracted"
+        }
+      ],
+      "on_solved": [
+        {
+          "recall_sparks": true
+        },
+        {
+          "give_item": "isolde_note"
+        },
+        {
+          "dialogue": "scrap_found"
+        }
+      ]
+    },
+    {
+      "id": "F-STATIC-02",
+      "name_key": "fpuzzle.F-STATIC-02.name",
+      "learned_from": "D-STATIC-02",
+      "solved_when": [
+        {
+          "object": "stream",
+          "state": "bent_left"
+        }
+      ],
+      "on_solved": [
+        {
+          "set_state": {
+            "object": "hatch",
+            "state": "open"
+          }
+        },
+        {
+          "dialogue": "stairs_open"
+        },
+        {
+          "recall_sparks": true
+        }
+      ]
+    }
+  ],
+  "solids": [
+    [
+      44,
+      252,
+      846,
+      80
+    ],
+    [
+      1222,
+      290,
+      220,
+      105
+    ],
+    [
+      62,
+      365,
+      245,
+      165
+    ],
+    [
+      360,
+      410,
+      350,
+      135
+    ],
+    [
+      732,
+      405,
+      305,
+      155
+    ],
+    [
+      1058,
+      405,
+      104,
+      130
+    ],
+    [
+      46,
+      545,
+      92,
+      70
+    ],
+    [
+      183,
+      628,
+      285,
+      135
+    ],
+    [
+      1196,
+      608,
+      104,
+      142
+    ],
+    [
+      1330,
+      638,
+      126,
+      98
+    ],
+    [
+      46,
+      762,
+      112,
+      115
+    ],
+    [
+      509,
+      655,
+      114,
+      80
+    ]
+  ],
+  "sunlight": {
+    "color": "#fff1cf",
+    "alpha": 0.28,
+    "rects": [
+      [
+        150,
+        334,
+        96,
+        64
+      ],
+      [
+        335,
+        334,
+        96,
+        64
+      ],
+      [
+        520,
+        334,
+        96,
+        64
+      ],
+      [
+        705,
+        334,
+        96,
+        64
+      ]
+    ],
+    "dust": 36,
+    "dust_color": "#fff8e6",
+    "dust_height": 90,
+    "sprite": "assets/props/sunlight_window.png"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "ch1",
+  "dialogues": {
+    "archive_enter": [
+      { "id": "10", "speaker": "luca", "expr": "surprised", "text": "수도원 지하에 이런 서고가 있었다니… 저 커다란 둥근 문은 뭐지?" },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "봉인의 문이야! 저 안에 루미가 자고 있어. 빛 스파크!" },
+      { "id": "30", "speaker": "narrator", "text": "[조작] Q를 누르면 조사 모드가 되어 숨은 잉크 방울이 보입니다. 잉크 방울은 수수께끼의 힌트를 볼 때 씁니다." }
+    ],
+    "seal_intro": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "문에 고리가 세 겹. 고리마다 수수께끼가 하나씩 새겨져 있어." },
+      { "id": "20", "speaker": "jjirit", "expr": "neutral", "text": "이졸데는 그 스파크를 이해한 사람만 열 수 있게 문을 잠갔어. 세 개 다 풀어야 해." }
+    ],
+    "lumi_awakens": [
+      { "id": "10", "speaker": "narrator", "text": "세 고리가 차례로 돌아갔다. 문 한가운데 별 문양에서 작은 랜턴 하나가 빠져나와 천천히 떠올랐다." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "루미! 일어났구나!" },
+      { "id": "30", "speaker": "lumi", "text": "…… (깜빡, 깜빡.)" },
+      { "id": "40", "speaker": "jjirit", "expr": "neutral", "text": "루미는 말 대신 빛으로 이야기해. 방금 건 '반가워'야." },
+      { "id": "50", "speaker": "narrator", "text": "루미가 벽을 향해 빛을 비추었다. 빛 속에 한 사람의 모습이 떠올랐다." }
+    ],
+    "vision_1": [
+      { "id": "10", "speaker": "isolde", "expr": "happy", "text": "루미, 잘 보렴. 빛은 가로막는 것이 없으면 곧게 간단다." },
+      { "id": "20", "speaker": "isolde", "expr": "neutral", "text": "거울을 만나면 들어간 각도 그대로 튕겨 나오지. 그러니 거울만 잘 놓으면 빛을 어디로든 보낼 수 있어." },
+      { "id": "30", "speaker": "isolde", "expr": "happy", "text": "이 문은 빛이 문양에 닿아야 열리게 해 두었단다. 열쇠는 훔칠 수 있어도, 이해한 것은 훔칠 수 없으니까." },
+      { "id": "40", "speaker": "isolde", "expr": "sad", "text": "…밖이 소란스럽구나. 이제 너희를 재워야겠다." },
+      { "id": "50", "speaker": "isolde", "expr": "neutral", "text": "질문하는 사람이 오거든, 길을 비춰 주렴." }
+    ],
+    "after_vision": [
+      { "id": "10", "speaker": "narrator", "text": "빛이 사그라들었다." },
+      { "id": "20", "speaker": "luca", "expr": "sad", "text": "저 사람이… 이졸데." },
+      { "id": "30", "speaker": "jjirit", "expr": "sad", "text": "응. 우리를 재우던 날이야." },
+      { "id": "40", "speaker": "luca", "expr": "neutral", "text": "빛이 문양에 닿으면 열린다고 했지. 빛 문양은 문 아래에 하나, 오른쪽 아래 벽에 하나. 등잔 받침에 루미를 올려 보자." },
+      { "id": "50", "speaker": "narrator", "text": "[조작] 숫자 키 2로 루미를 고르고 등잔 받침을 왼쪽 클릭하면 빛줄기를 쏩니다. 거울은 가까이에서 E로 돌립니다. R을 누르면 이 방의 장치가 처음 상태로 돌아갑니다." }
+    ],
+    "seal_door_locked": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "고리는 풀렸지만 문은 아직 닫혀 있어. 빛 문양 두 개에 모두 빛이 닿아야 해." }
+    ],
+    "lock_1_lit": [
+      { "id": "10", "speaker": "narrator", "text": "문 아래의 빛 문양이 환하게 켜졌다." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "하나 됐다! 남은 문양은 오른쪽 등잔 받침 바로 아래쪽 벽에 있어." },
+      { "id": "30", "speaker": "luca", "expr": "neutral", "text": "받침은 왼쪽을 보고 있는데 문양은 받침과 같은 벽에 있네. 쏜 빛을 되돌려야 해." }
+    ],
+    "lock_2_lit": [
+      { "id": "10", "speaker": "narrator", "text": "오른쪽 벽의 빛 문양이 환하게 켜졌다." },
+      { "id": "20", "speaker": "luca", "expr": "happy", "text": "직각으로 선 두 거울이 빛을 되돌려 보냈어. 수수께끼 그대로야!" },
+      { "id": "30", "speaker": "jjirit", "expr": "neutral", "text": "남은 건 문 아래의 문양이야. 왼쪽 등잔 받침에서 쏴 보자." }
+    ],
+    "lab_door_open": [
+      { "id": "10", "speaker": "narrator", "text": "두 문양이 함께 빛나자, 둥근 문이 무겁게 돌아가며 열렸다." },
+      { "id": "20", "speaker": "luca", "expr": "surprised", "text": "안쪽에 방이 있어…!" }
+    ],
+    "old_desk_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "펼쳐진 책에 별자리와 숫자가 빽빽하다. 필사실 책들과는 글씨가 달라. 같은 사람이 여기서 오래 공부한 것 같아." }
+    ],
+    "tall_mirror_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "낡은 전신 거울. 먼지를 닦으니 내 얼굴이 비친다. 오른손을 들자 거울 속의 나도 바로 맞은편 손을 든다." }
+    ],
+    "lab_enter": [
+      { "id": "10", "speaker": "luca", "expr": "surprised", "text": "유리 기구, 말린 약초, 빽빽한 기록… 여기가 이졸데의 연구실." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "하나도 안 변했네! 저 작업대에서 뭐든 만들었어." },
+      { "id": "30", "speaker": "luca", "expr": "neutral", "text": "오른쪽 통로는 마른 덩굴로 꽉 막혔어." },
+      { "id": "40", "speaker": "jjirit", "expr": "neutral", "text": "저 너머가 약초원이야. 뚫을 방법이 이 방 어딘가에 있을 거야." }
+    ],
+    "chest_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "기록함에 Ω 문양. 여기도 수수께끼로 잠겨 있어." }
+    ],
+    "chest_open": [
+      { "id": "10", "speaker": "luca", "expr": "happy", "text": "도면이 들어 있어. '볼록 렌즈 집광기'. 빛을 한 점에 모아 불을 붙이는 도구래." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "작업대에서 만들 수 있겠다! 렌즈로 쓸 유리가 있어야 해. 선반을 찾아봐." }
+    ],
+    "chest_again": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "빈 기록함. 도면은 오메가 문서에 끼워 두었다." }
+    ],
+    "shelf_glass": [
+      { "id": "10", "speaker": "luca", "expr": "happy", "text": "선반에 볼록하게 갈아 놓은 유리 원반이 있다. 한 뼘이 넘게 커. 가져가자." }
+    ],
+    "shelf_again": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "약초 병과 유리 기구가 가지런하다. 지금 쓸 만한 것은 더 없어." }
+    ],
+    "workbench_no_plan": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "연장이 잘 갖춰진 작업대. 무엇을 만들지는 아직 모르겠어." }
+    ],
+    "workbench_done": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "집광기는 다 만들었다. 바닥의 렌즈 틀에 끼워 쓰면 돼." }
+    ],
+    "crafted_lens": [
+      { "id": "10", "speaker": "luca", "expr": "happy", "text": "됐다, 볼록 렌즈 집광기! 그런데 햇빛이 없는 지하에서도 쓸 수 있을까?" },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "루미가 있잖아. 루미가 마음먹고 비추면 한낮 햇빛만큼 세고, 이 렌즈를 가득 채울 만큼 굵게 쏠 수 있다고." },
+      { "id": "30", "speaker": "jjirit", "expr": "neutral", "text": "이 렌즈는 초점이 바닥 돌 두 칸 거리에 맺힌대. 바닥에 렌즈 틀이 여러 군데 있으니까 잘 골라서 끼워." },
+      { "id": "40", "speaker": "narrator", "text": "[조작] 렌즈 틀 가까이에서 E를 누르면 집광기를 끼우거나 뺍니다." }
+    ],
+    "lens_slot_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "바닥에 놋쇠 틀이 박혀 있다. 둥근 것을 끼우는 자리 같아." }
+    ],
+    "vine_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "바싹 마른 덩굴이 통로를 꽉 메웠다. 손으로는 뜯기지 않아." }
+    ],
+    "vine_lit_plain": [
+      { "id": "10", "speaker": "jjirit", "expr": "neutral", "text": "덩굴이 환해지기만 하네. 그냥 비춰서는 안 되겠어. 빛을 한 점에 모아야 해." }
+    ],
+    "vine_lit_converging": [
+      { "id": "10", "speaker": "jjirit", "expr": "neutral", "text": "빛이 좁아지다 말았어. 아직 다 모이기 전에 덩굴에 닿았나 봐. 렌즈가 덩굴에 너무 가까워." }
+    ],
+    "vine_lit_spread": [
+      { "id": "10", "speaker": "jjirit", "expr": "neutral", "text": "빛이 덩굴 앞에서 한 점에 모였다가 다시 퍼져 버렸어. 렌즈가 덩굴에서 너무 멀어." }
+    ],
+    "vine_burn": [
+      { "id": "10", "speaker": "narrator", "text": "덩굴 위에 눈부신 점이 맺혔다. 가느다란 연기가 피어오르더니, 마른 덩굴이 타닥타닥 타 들어갔다." },
+      { "id": "20", "speaker": "luca", "expr": "happy", "text": "초점이 딱 덩굴 위에 맺혔어. 길이 열렸다!" },
+      { "id": "30", "speaker": "lumi", "text": "(깜빡! 깜빡!)" },
+      { "id": "40", "speaker": "jjirit", "expr": "happy", "text": "이졸데도 이 길로 약초원에 다녔어. 가자, 다음 친구가 기다려!" }
+    ],
+    "ending": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "통로 끝에서 바람이 불어온다. 풀 냄새가 나." },
+      { "id": "20", "speaker": "luca", "expr": "happy", "text": "\"질문하는 자가 나의 뒤를 잇는다.\" …가 보자." }
+    ]
+  }
+}

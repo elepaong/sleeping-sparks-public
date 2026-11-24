@@ -1,0 +1,56 @@
+{
+  "id": "autumn_dusk",
+  "name": "가을 해질녘의 숲",
+  "status": "draft",
+  "base": "spring_day",
+  "note": "예시 스테이지. 같은 맵을 단풍 팔레트와 노을 분위기로 굽는다.",
+
+  "ramps": {
+    "mint": ["#c9794f", "#e39a5c", "#f2bb72", "#fbe0a0"],
+    "sage": ["#a89a52", "#c6b962", "#e0d47e", "#f4eeae"],
+    "teal": ["#a8605a", "#c97e6a", "#e3a184", "#f5cdb0"],
+    "moss": ["#8f9c5a", "#aeb96c", "#cdd488", "#e8eab0"],
+    "pink": ["#c8646c", "#e08580", "#f2aa9c", "#fcd6c6"],
+    "lilac": ["#9a6a94", "#b888ae", "#d4aacb", "#eed2e6"]
+  },
+
+  "ground": {
+    "grass": ["#a9b46c", "#b9c178", "#cbd088", "#dbdc9a", "#e8e6ac"],
+    "edge": ["#96a468", "#a9b46c", "#b9c178"],
+    "forest": ["#8c8a5a", "#9a9662", "#a6a06a"],
+    "clover": ["#c2c97c", "#eef0b8"],
+    "water": ["#7fb4c8", "#8cc0d0", "#9fd0d8", "#bfe2e2"],
+    "water_edge": "#84b4c4",
+    "dapple": {"color": "#ffe2a8", "strength": 0.30, "color2": "#fff0c8", "strength2": 0.16},
+    "tuft": ["#94a05e", "#e6e2a0"],
+    "flower_ramps": ["gold", "pink", "cream", "gold", "cream"],
+    "floor_fern": ["#7c7a4c", "#b0a468"],
+    "shadow": [0.88, 0.86, 0.92]
+  },
+
+  "areas": {
+    "A": {"tint": {"color": "#f0c890", "strength": 0.10}},
+    "B": {"tint": {"color": "#aa7896", "strength": 0.26}},
+    "C": {"tint": {"color": "#c8be82", "strength": 0.15}},
+    "D": {"tint": {"color": "#fabe6e", "strength": 0.25}},
+    "E": {"tint": {"color": "#f0dcc8", "strength": 0.30}, "mood": {"haze": "#ffd0a00d", "shaftAlpha": 1.0}}
+  },
+
+  "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ff9a5a1a",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 0.9,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": ["gold", "pink", "mint", "mint"],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+  }
+}

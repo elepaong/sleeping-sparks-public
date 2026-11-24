@@ -1,0 +1,29 @@
+[
+  {
+    "id": "convex_lens",
+    "name": "볼록 렌즈 집광기",
+    "tier": 1,
+    "knowledge": [
+      "빛의 굴절"
+    ],
+    "unlocks": "약초원을 막은 덩굴 태우기",
+    "description": "한 뼘이 넘는 큰 유리 원반을 볼록하게 갈아 놋쇠 테에 끼운 도구. 나란한 빛을 한 점에 모은다. 초점 거리: 바닥 돌 두 칸.",
+    "cost": {
+      "parchments": [
+        "D-LIGHT-04"
+      ],
+      "energy": 60,
+      "items": [
+        "glass_disc"
+      ]
+    },
+    "focal_cells": 2,
+    "status": "draft"
+  },
+  {"id": "compass", "name": "나침반", "tier": 1, "knowledge": ["자기장"], "unlocks": "폐광 안에서 길 찾기", "status": "draft"},
+  {"id": "steam_pump", "name": "증기 펌프", "tier": 2, "knowledge": ["기화", "압력"], "unlocks": "물에 잠긴 물레방아 통로 배수", "status": "draft"},
+  {"id": "leyden_jar", "name": "축전 병", "tier": 2, "knowledge": ["정전기 저장"], "unlocks": "오래 멈춘 장치에 전기 공급", "status": "draft"},
+  {"id": "primitive_cell", "name": "원시 전지", "tier": 3, "knowledge": ["화학 반응과 전류"], "unlocks": "종탑 승강기 작동", "status": "draft"},
+  {"id": "electromagnet", "name": "전자석", "tier": 3, "knowledge": ["전류와 자기"], "unlocks": "무거운 철문 열기", "status": "draft"},
+  {"id": "telescope", "name": "망원경", "tier": 4, "knowledge": ["렌즈 조합"], "unlocks": "천문대 별지도 퍼즐", "status": "draft"}
+]

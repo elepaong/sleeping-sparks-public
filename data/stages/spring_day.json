@@ -1,0 +1,61 @@
+{
+  "id": "spring_day",
+  "name": "봄 한낮의 숲",
+  "status": "draft",
+  "layout": "forest",
+  "note": "모든 키를 다 적은 기준 스테이지. 다른 스테이지는 base로 이 파일을 물려받고 바꿀 값만 적는다. 설명은 design/stages.md.",
+
+  "ramps": {},
+
+  "ground": {
+    "grass": ["#86c68d", "#93cf90", "#a5d996", "#b9e3a1", "#c8eaa9"],
+    "edge": ["#7cbd8c", "#86c68d", "#93cf90"],
+    "forest": ["#6aa98e", "#74b490", "#7cbd8c"],
+    "clover": ["#9fd8a4", "#d6f2c2"],
+    "path": ["#ead3a8", "#f3e2bd", "#f8ecd0"],
+    "path_rim": "#dcc296",
+    "path_specks": ["#cdb8a8", "#fffaf0"],
+    "shore": ["#dccf9f", "#f1e6c2"],
+    "water": ["#86c4e2", "#93cfe6", "#a4dbea", "#bfe8f0"],
+    "water_foam": "#eafaf8",
+    "water_edge": "#8fc6dc",
+    "water_ripple": "#d2f0f4",
+    "water_shade": [0.93, 0.96, 0.99],
+    "dapple": {"color": "#fffad6", "strength": 0.26, "color2": "#fffce2", "strength2": 0.14},
+    "tuft": ["#7fc08c", "#d0eeb0"],
+    "flower_center": "#fff2b0",
+    "flower_ramps": ["pink", "gold", "lilac", "blue", "cream", "cream", "pink"],
+    "pebble": ["#cdbfb8", "#e2d6cc", "#f6f0ea"],
+    "floor_fern": ["#5fa08a", "#86c4a0"],
+    "shadow": [0.86, 0.91, 0.97]
+  },
+
+  "trees_base": ["mint", "sage", "teal", "teal", "mint"],
+
+  "areas": {
+    "A": {"name": "오두막 빈터", "tint": null, "trees": ["sage", "gold"]},
+    "B": {"name": "버섯 숲", "tint": {"color": "#96bace", "strength": 0.34}, "trees": ["lilac", "pink", "lilac"],
+          "special": ["giantmush", "giantmush2"]},
+    "C": {"name": "연못 풀밭", "tint": {"color": "#a0e8d0", "strength": 0.20}, "trees": ["mint", "sage"]},
+    "D": {"name": "꽃바람 언덕", "tint": {"color": "#f4ec96", "strength": 0.24}, "trees": ["pink", "gold", "pink"]},
+    "E": {"name": "큰나무 숲터", "tint": {"color": "#e2f0e8", "strength": 0.34}, "trees": ["pink", "lilac", "pink"]}
+  },
+
+  "mood": {
+    "bg": "#74b490",
+    "tint": "#ffffff",
+    "haze": "#fff6d000",
+    "shaftColor": "#ffffff",
+    "shaftAlpha": 1.0,
+    "shaftAngle": 14,
+    "moteColor": "#ffffff",
+    "moteCount": 42,
+    "glowColor": "#fff2bf",
+    "glowAlpha": 0.55,
+    "butterflies": 9,
+    "fall": ["pink", "gold", "mint"],
+    "fallMin": 0.35,
+    "fallMax": 0.8,
+    "lanternsLit": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "D-LIGHT-03",
+  "kind": "door",
+  "door_type": "principle",
+  "spark": "lumi",
+  "zone": "archive",
+  "title": "두 거울의 모서리",
+  "input": { "kind": "choice", "options": ["...", "...", "..."] },
+  "answer": "...",
+  "energy": 30,
+  "difficulty": 2,
+  "text": "문제 문장",
+  "hints": ["힌트 1", "힌트 2", "힌트 3", "특별 힌트"],
+  "explanation": "정답 해설",
+  "knowledge": { "parchment": "양피지에 기록될 지식", "source": "참고 출처" },
+  "verification": { "answer_unique": true, "fact_checked": true, "script": "tools/verify/D-LIGHT-03.py" },
+  "status": "draft"
+}

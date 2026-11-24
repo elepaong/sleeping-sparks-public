@@ -1,0 +1,30 @@
+{
+  "id": "D-MAG-01",
+  "kind": "door",
+  "door_type": "logic",
+  "spark": "mag",
+  "zone": "forge_village",
+  "title": "세 개의 막대자석",
+  "input": {
+    "kind": "choice",
+    "options": ["N극", "S극", "알 수 없다"]
+  },
+  "answer": "N극",
+  "energy": 30,
+  "difficulty": 2,
+  "text": "막대자석 A, B, C가 있습니다. 세 개 모두 자석입니다. A의 N극은 B의 한쪽 끝을 밀어내고, B의 다른 쪽 끝은 C의 왼쪽 끝을 끌어당깁니다. C의 왼쪽 끝은 무슨 극일까요?",
+  "hints": [
+    "자석은 같은 극끼리 밀어내고, 다른 극끼리 끌어당깁니다.",
+    "A의 N극이 밀어낸 B의 끝은 무슨 극일까요?",
+    "막대자석의 두 끝은 서로 다른 극입니다. B의 반대쪽 끝을 생각해 보세요.",
+    "B의 반대쪽 끝은 S극입니다. S극이 끌어당기는 극을 고르세요."
+  ],
+  "explanation": "같은 극끼리 밀어내므로 A의 N극이 밀어낸 B의 끝은 N극이고, B의 반대쪽 끝은 S극입니다. S극이 끌어당기는 C의 끝은 N극입니다.",
+  "knowledge": {
+    "parchment": "자석은 같은 극끼리 밀어내고 다른 극끼리 끌어당긴다.",
+    "source": ""
+  },
+  "verification": { "answer_unique": false, "fact_checked": false, "script": null },
+  "status": "draft",
+  "notes": "기획서 샘플을 옮긴 초안. 기획서 지적대로 '세 개 모두 자석입니다'를 문제에 넣었다(없으면 자석이 아닌 철도 끌려와 정답이 하나로 정해지지 않음). 힌트 4개와 선택지는 2026-11-10 세션이 새로 쓴 것이라 검토 필요. zone 이름 forge_village는 임시. 출처 미기입."
+}

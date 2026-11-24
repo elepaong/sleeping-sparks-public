@@ -1,0 +1,10 @@
+[
+  { "id": "jjirit", "glow": "#1c3a55",  "name": "찌릿",   "phenomenon": "정전기",   "chapter": "prologue" },
+  { "id": "lumi", "glow": "#6b5420",    "name": "루미",   "phenomenon": "빛",       "chapter": 1 },
+  { "id": "hwaro",   "name": "화로",   "phenomenon": "열",       "chapter": 2 },
+  { "id": "mag",     "name": "마그",   "phenomenon": "자력",     "chapter": 3 },
+  { "id": "mulmalle","name": "물말래", "phenomenon": "물·압력",  "chapter": 4 },
+  { "id": "ullim",   "name": "울림",   "phenomenon": "소리·진동","chapter": 5 },
+  { "id": "hwii",    "name": "휘이",   "phenomenon": "바람·기압","chapter": 5 },
+  { "id": "gravi",   "name": "그레비", "phenomenon": "중력",     "chapter": 6 }
+]

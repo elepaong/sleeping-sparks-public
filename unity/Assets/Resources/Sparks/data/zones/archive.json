@@ -1,0 +1,102 @@
+{
+  "id": "archive",
+  "name_key": "zone.archive.name",
+  "chapter": 1,
+  "ambient": "#d6c6c0",
+  "background": "assets/backgrounds/archive.png",
+  "walk_poly": [
+    [120, 222], [240, 180], [345, 162], [500, 168], [548, 196], [584, 228], [540, 272],
+    [470, 300], [410, 334], [322, 354], [255, 330], [195, 302], [140, 270]
+  ],
+  "spawns": { "default": [210, 262], "from_scriptorium": [210, 262], "from_lab": [500, 192] },
+  "grid": { "origin": [230, 146], "cell": [40, 30], "cols": 8, "rows": 6 },
+  "on_enter": [
+    { "if": { "not_flag": "archive_seen" }, "do": [{ "dialogue": "archive_enter" }, { "set_flag": "archive_seen" }] }
+  ],
+  "objects": [
+    {
+      "id": "stairs_up", "type": "prop", "name_key": "obj.stairs_up", "pos": [168, 262],
+      "sprite": "assets/props/stairs.png", "flat": true,
+      "interact": [{ "do": [{ "goto_zone": "scriptorium", "spawn": "from_archive" }] }]
+    },
+    {
+      "id": "seal_door", "type": "prop", "name_key": "obj.seal_door", "pos": [500, 176],
+      "sprite": null, "hotspot": [410, 30, 112, 122],
+      "interact": [
+        { "if": { "flag": "lab_open" }, "do": [{ "goto_zone": "lab", "spawn": "from_archive" }] },
+        { "if": { "has_spark": "lumi" }, "do": [{ "dialogue": "seal_door_locked" }] },
+        {
+          "do": [
+            { "if": { "not_flag": "seal_seen" }, "dialogue": "seal_intro" },
+            { "set_flag": "seal_seen" },
+            { "door_puzzle": "D-LIGHT-01" },
+            { "door_puzzle": "D-LIGHT-02" },
+            { "door_puzzle": "D-LIGHT-03" },
+            { "give_spark": "lumi" },
+            { "dialogue": "lumi_awakens" },
+            { "dialogue": "vision_1", "style": "vision" },
+            { "dialogue": "after_vision" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old_desk", "type": "prop", "name_key": "obj.old_desk", "pos": [212, 196],
+      "sprite": null, "hotspot": [100, 118, 130, 62],
+      "interact": [{ "do": [{ "dialogue": "old_desk_look" }] }]
+    },
+    {
+      "id": "tall_mirror", "type": "prop", "name_key": "obj.tall_mirror", "pos": [556, 204],
+      "sprite": null, "hotspot": [548, 118, 40, 84],
+      "interact": [{ "do": [{ "dialogue": "tall_mirror_look" }] }]
+    },
+
+    { "id": "stand_1", "type": "light_stand", "name_key": "obj.light_stand", "cell": [0, 3], "dir": "E",
+      "sprite": "assets/props/light_stand.png", "solid": [18, 10], "blocks_beam": true,
+      "placeable": true, "place_if": { "has_spark": "lumi" } },
+    { "id": "mirror_1", "type": "mirror", "name_key": "obj.mirror", "cell": [3, 3], "state": "\\",
+      "sprites": { "/": "assets/props/mirror_slash.png", "\\": "assets/props/mirror_backslash.png" }, "solid": [18, 10] },
+    { "id": "mirror_2", "type": "mirror", "name_key": "obj.mirror", "cell": [3, 1], "state": "/",
+      "sprites": { "/": "assets/props/mirror_slash.png", "\\": "assets/props/mirror_backslash.png" }, "solid": [18, 10] },
+    { "id": "mirror_3", "type": "mirror", "name_key": "obj.mirror", "cell": [5, 1], "state": "\\",
+      "sprites": { "/": "assets/props/mirror_slash.png", "\\": "assets/props/mirror_backslash.png" }, "solid": [18, 10] },
+    { "id": "lock_1", "type": "light_lock", "name_key": "obj.light_lock", "cell": [5, 0], "state": "off",
+      "sprites": { "off": "assets/props/light_lock_off.png", "lit": "assets/props/light_lock_lit.png" },
+      "blocks_beam": true },
+
+    { "id": "stand_2", "type": "light_stand", "name_key": "obj.light_stand", "cell": [7, 2], "dir": "W",
+      "sprite": "assets/props/light_stand.png", "solid": [18, 10], "blocks_beam": true,
+      "placeable": true, "place_if": { "has_spark": "lumi" } },
+    { "id": "mirror_4", "type": "mirror", "name_key": "obj.mirror", "cell": [1, 2], "state": "\\",
+      "sprites": { "/": "assets/props/mirror_slash.png", "\\": "assets/props/mirror_backslash.png" }, "solid": [18, 10] },
+    { "id": "mirror_5", "type": "mirror", "name_key": "obj.mirror", "cell": [1, 4], "state": "/",
+      "sprites": { "/": "assets/props/mirror_slash.png", "\\": "assets/props/mirror_backslash.png" }, "solid": [18, 10] },
+    { "id": "lock_2", "type": "light_lock", "name_key": "obj.light_lock", "cell": [7, 4], "state": "off",
+      "sprites": { "off": "assets/props/light_lock_off.png", "lit": "assets/props/light_lock_lit.png" },
+      "blocks_beam": true },
+
+    { "id": "ink_1", "type": "ink", "name_key": "obj.ink", "pos": [330, 176], "sprite": "assets/props/ink_drop.png" },
+    { "id": "ink_2", "type": "ink", "name_key": "obj.ink", "pos": [340, 336], "sprite": "assets/props/ink_drop.png" },
+    { "id": "ink_3", "type": "ink", "name_key": "obj.ink", "pos": [574, 228], "sprite": "assets/props/ink_drop.png" }
+  ],
+  "puzzles": [
+    {
+      "id": "F-LIGHT-01", "name_key": "fpuzzle.F-LIGHT-01.name", "learned_from": "D-LIGHT-02",
+      "solved_when": [{ "object": "lock_1", "state": "lit" }],
+      "on_solved": [
+        { "if": { "not_solved": "F-LIGHT-02" }, "dialogue": "lock_1_lit" },
+        { "if": { "solved": "F-LIGHT-02" }, "set_flag": "lab_open" },
+        { "if": { "solved": "F-LIGHT-02" }, "dialogue": "lab_door_open" }
+      ]
+    },
+    {
+      "id": "F-LIGHT-02", "name_key": "fpuzzle.F-LIGHT-02.name", "learned_from": "D-LIGHT-03",
+      "solved_when": [{ "object": "lock_2", "state": "lit" }],
+      "on_solved": [
+        { "if": { "not_solved": "F-LIGHT-01" }, "dialogue": "lock_2_lit" },
+        { "if": { "solved": "F-LIGHT-01" }, "set_flag": "lab_open" },
+        { "if": { "solved": "F-LIGHT-01" }, "dialogue": "lab_door_open" }
+      ]
+    }
+  ]
+}

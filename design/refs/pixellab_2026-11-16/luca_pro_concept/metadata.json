@@ -1,0 +1,36 @@
+{
+  "group_id": "27a4d373-0869-491d-914d-babee08624e4",
+  "states": [
+    {
+      "character": {
+        "id": "79189c5c-9719-415c-9f11-8b0a6b3eaa14",
+        "name": "Idle",
+        "prompt": "16-year-old apprentice scribe boy named Luca, chibi three-heads-tall proportions, messy curly brown hair, brown eyes, calm curious face. Dark brown hooded short shoulder cape over a long dark brown coat with a faded gold pattern at the hem, crossed leather chest straps with a brass ring, a belt, white shirt sleeves, fingerless gloves, dark trousers, tall buckled brown leather boots, a leather satchel at his right hip. Medieval monastery scribe, storybook pixel art, colour-matched selective outlines, no black outline.",
+        "size": {
+          "width": 72,
+          "height": 72
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-16T09:11:52.059276+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-16T09:13:50.807942"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "D-STATIC-01",
+  "kind": "door",
+  "door_type": "principle",
+  "spark": "jjirit",
+  "zone": "scriptorium",
+  "title": "호박과 양털",
+  "input": {
+    "kind": "choice",
+    "options": ["잘게 찢은 종잇조각", "쇠못", "조약돌", "놋쇠 단추"]
+  },
+  "answer": "잘게 찢은 종잇조각",
+  "energy": 20,
+  "difficulty": 1,
+  "text": "오메가 문서의 첫 장에 이렇게 적혀 있습니다.\n\n\"호박(나무의 진이 땅속에서 굳은 누런 보석)을 마른 양털로 여러 번 문질러라. 그 호박을 책상 위에 놓인 네 가지 물건 위로, 닿지 않게 아주 가까이 가져가라. 책상에서 떠올라 호박 쪽으로 끌려 올라오는 것은 무엇이냐?\"\n\n책상 위에는 잘게 찢은 종잇조각, 쇠못, 조약돌, 놋쇠 단추가 놓여 있습니다.",
+  "hints": [
+    "문지른 호박이 물건을 끌어당기는 힘은 그리 세지 않습니다.",
+    "네 가지 물건의 무게를 견주어 보세요.",
+    "문지른 호박은 물건의 재료를 가리지 않고 끌어당깁니다. 달라지는 것은 그 힘으로 들어 올릴 수 있느냐입니다.",
+    "넷 가운데 가장 가벼운 것은 종잇조각입니다."
+  ],
+  "explanation": "양털로 문지른 호박은 전기를 띱니다. 전기를 띤 물체는 전기를 띠지 않은 물체도 끌어당기지만, 그 힘이 약해서 종잇조각처럼 아주 가벼운 것만 떠오릅니다. 쇠못, 조약돌, 놋쇠 단추도 약하게 끌리지만 무거워서 떠오르지 못합니다. 떠오르느냐 아니냐를 가르는 것은 재료가 아니라 무게입니다. '전기(electricity)'라는 말도 호박을 뜻하는 그리스어 '엘렉트론'에서 나왔습니다.",
+  "knowledge": {
+    "parchment": "마찰 전기 — 호박을 양털로 문지르면 전기를 띤다. 전기를 띤 물체는 전기를 띠지 않은 물체도 끌어당기는데, 힘이 약해서 가벼운 것만 움직인다.",
+    "source": "OpenStax, College Physics 2e, 18.1 Static Electricity and Charge: Conservation of Charge / 18.2 Conductors and Insulators (https://openstax.org/books/college-physics-2e/pages/18-1-static-electricity-and-charge-conservation-of-charge , https://openstax.org/books/college-physics-2e/pages/18-2-conductors-and-insulators)"
+  },
+  "verification": { "answer_unique": true, "fact_checked": true, "script": null },
+  "status": "reviewed",
+  "notes": "[검토 2026-11-10] 문제만 받은 별도 서브에이전트가 풀어 같은 답을 냈고, 사실 확인 전담 서브에이전트가 답·해설·힌트·출처를 확인했다. 지적과 고친 곳은 design/ch1-prototype.md 5절. 2026-11-10 프로토타입 세션 작성. 프롤로그의 첫 수수께끼. 다음 필드 퍼즐 F-STATIC-01(창살 틈의 종잇조각)과 이어짐."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "D-LIGHT-04",
+  "kind": "door",
+  "door_type": "principle",
+  "spark": "lumi",
+  "zone": "lab",
+  "title": "세 개의 볼록 렌즈",
+  "input": {
+    "kind": "order",
+    "options": ["가 (가장 납작한 렌즈)", "나 (중간 렌즈)", "다 (가장 볼록한 렌즈)"]
+  },
+  "answer": ["다 (가장 볼록한 렌즈)", "나 (중간 렌즈)", "가 (가장 납작한 렌즈)"],
+  "energy": 30,
+  "difficulty": 2,
+  "text": "볼록 렌즈는 나란히 들어온 햇빛을 꺾어 아주 작은 밝은 점으로 모읍니다. 이 자리를 초점이라고 합니다.\n\n같은 유리로 만든 볼록 렌즈 가, 나, 다가 있습니다. 세 렌즈는 지름과 가장자리 두께가 같고, 가운데 두께만 다릅니다. '가'는 가운데가 가장 얇아 납작하고, '다'는 가운데가 가장 두꺼워 볼록하며, '나'는 그 중간입니다.\n\n세 렌즈를 해를 똑바로 마주 보게 들고 햇빛을 모을 때, 초점이 렌즈에서 가장 가까운 것부터 가장 먼 것까지 차례로 놓으세요.",
+  "hints": [
+    "빛은 렌즈의 굽은 면을 지나면서 꺾입니다.",
+    "면이 많이 굽은 렌즈일수록 빛을 더 크게 꺾습니다.",
+    "빛이 크게 꺾일수록 렌즈를 지난 빛은 더 빨리, 곧 렌즈에서 더 가까운 곳에서 한 점에 모입니다.",
+    "가장 볼록한 '다'의 초점이 가장 가깝고, 가장 납작한 '가'의 초점이 가장 멉니다."
+  ],
+  "explanation": "빛은 공기에서 유리로, 유리에서 공기로 나갈 때 꺾입니다(굴절). 볼록 렌즈는 면이 많이 굽을수록 빛을 크게 꺾어서, 빛이 렌즈에서 더 가까운 곳에 모입니다. 그래서 초점은 다, 나, 가 순서로 가깝습니다. 초점에서는 렌즈 전체로 들어온 빛이 한 점에 모이므로 가장 밝고 뜨겁습니다. 초점보다 앞이나 뒤에서는 빛이 넓게 퍼져 있습니다.",
+  "knowledge": {
+    "parchment": "빛의 굴절 — 볼록 렌즈는 나란한 빛을 꺾어 초점에 모은다. 렌즈가 볼록할수록 초점이 가깝고, 빛은 초점에서 가장 세다.",
+    "source": "OpenStax, College Physics 2e, 25.3 The Law of Refraction / 25.6 Image Formation by Lenses (https://openstax.org/books/college-physics-2e/pages/25-6-image-formation-by-lenses) / OpenStax, University Physics Volume 3, 2.4 Thin Lenses — 렌즈 제작자 공식 (https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses)"
+  },
+  "verification": { "answer_unique": true, "fact_checked": true, "script": "tools/verify/D-LIGHT-04.py" },
+  "status": "reviewed",
+  "notes": "[검토 2026-11-10] 문제만 받은 별도 서브에이전트가 풀어 같은 답을 냈고, 사실 확인 전담 서브에이전트가 답·해설·힌트·출처를 확인했다. 지적과 고친 곳은 design/ch1-prototype.md 5절. 2026-11-10 프로토타입 세션 작성. 연구실 기록함의 수수께끼. 발명품 '볼록 렌즈 집광기'의 지식(빛의 굴절)을 주고, 다음 필드 퍼즐 F-LIGHT-03(초점에 덩굴 맞추기)과 이어짐."
+}

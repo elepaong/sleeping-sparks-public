@@ -1,0 +1,77 @@
+{
+  "id": "prologue",
+  "dialogues": {
+    "prologue_intro": [
+      { "id": "10", "speaker": "narrator", "text": "성 오르반 수도원의 필사실. 저녁 기도가 끝나고 모두 돌아간 밤." },
+      { "id": "20", "speaker": "luca", "expr": "neutral", "text": "오늘 베낄 것은 이 낡은 약초서까지. …그런데 이 책, 표지가 왜 이렇게 두껍지?" },
+      { "id": "30", "speaker": "luca", "expr": "happy", "text": "궁금한 건 못 참겠어. 책상으로 가서 살펴보자." },
+      { "id": "40", "speaker": "narrator", "text": "[조작] WASD 또는 바닥 클릭으로 움직입니다. 물건 가까이에서 E를 누르거나 물건을 클릭하면 조사합니다." }
+    ],
+    "find_omega": [
+      { "id": "10", "speaker": "luca", "expr": "surprised", "text": "표지 안쪽에 얇은 책이 한 권 더 숨겨져 있어. 겉장에는 Ω 문양 하나뿐." },
+      { "id": "20", "speaker": "luca", "expr": "neutral", "text": "첫 장에 글이 있다. \"질문하는 자여, 답해 보아라.\" 수수께끼인가?" }
+    ],
+    "jjirit_awakens": [
+      { "id": "10", "speaker": "narrator", "text": "책갈피에서 양털에 싸인 호박돌 하나가 굴러 나오더니, 타닥 하고 작은 불꽃을 튀겼다." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "푸하! 잘 잤다! 얼마 만이야? 누가 날 깨웠어?" },
+      { "id": "30", "speaker": "luca", "expr": "surprised", "text": "도, 돌이 말을 했어…! 너, 뭐야?" },
+      { "id": "40", "speaker": "jjirit", "expr": "neutral", "text": "돌이라니! 난 찌릿. 정전기 스파크야. 이졸데가 나를 이 책 속에 재워 뒀지." },
+      { "id": "50", "speaker": "luca", "expr": "neutral", "text": "이졸데… 사십 년 전에 마녀로 몰렸다는 그 약초사?" },
+      { "id": "60", "speaker": "jjirit", "expr": "sad", "text": "마녀 아니야. 그냥, 궁금한 게 아주 많은 사람이었어. 너처럼." },
+      { "id": "70", "speaker": "jjirit", "expr": "happy", "text": "수수께끼를 풀었으니 네가 '질문하는 자'구나! 다른 친구들도 깨워 줘. 다들 이 수도원 어딘가에서 자고 있거든." },
+      { "id": "80", "speaker": "jjirit", "expr": "neutral", "text": "아래로 내려가는 길이 이 방에 있어. 여는 법은 이졸데가 쪽지에 적어서 바닥 틈에 숨겨 놨고. 가벼운 건 내가 끌어올릴 수 있으니까 바닥의 쇠창살을 찾아봐!" },
+      { "id": "90", "speaker": "narrator", "text": "[조작] 숫자 키 1로 찌릿을 고른 뒤, 물건을 왼쪽 클릭하면 그 자리에 찌릿을 배치합니다. 오른쪽 클릭으로 회수합니다. Tab으로 오메가 문서를 엽니다." }
+    ],
+    "desk_again": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "베끼던 약초서와 오메가 문서. 필사는… 나중에 하자." }
+    ],
+    "grate_key_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "바닥 쇠창살 아래에 쇠 열쇠가 떨어져 있다. 손가락이 닿지 않아." }
+    ],
+    "key_no_reaction": [
+      { "id": "10", "speaker": "jjirit", "expr": "sad", "text": "끄응… 안 돼. 쇠 열쇠는 너무 무거워. 내 힘은 약해서 아주 가벼운 것만 들어 올릴 수 있어." },
+      { "id": "20", "speaker": "luca", "expr": "neutral", "text": "수수께끼의 쇠못이랑 똑같네. 열쇠는 나중에 다른 방법을 찾자." }
+    ],
+    "grate_scrap_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "쇠창살 아래 틈에 작은 종잇조각이 끼어 있다. 글씨가 적힌 것 같은데, 손이 닿지 않아." }
+    ],
+    "grate_empty": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "쪽지를 꺼낸 틈이다. 이제 먼지뿐." }
+    ],
+    "scrap_found": [
+      { "id": "10", "speaker": "narrator", "text": "종잇조각이 창살 틈으로 날아올라 찌릿의 몸에 찰싹 달라붙었다." },
+      { "id": "20", "speaker": "jjirit", "expr": "happy", "text": "봤지? 문지른 호박은 가벼운 걸 끌어당긴다고!" },
+      { "id": "30", "speaker": "luca", "expr": "neutral", "text": "글씨가 있어. \"가는 물을 깔때기로 이끌어라. 그릇이 차면 길이 열린다.\"" },
+      { "id": "40", "speaker": "jjirit", "expr": "neutral", "text": "이졸데 글씨야. 가는 물이라면… 저쪽 벽의 수반! 가 보자." }
+    ],
+    "fountain_look": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "손 씻는 벽 수반. 물이 실처럼 가늘게 떨어진다. 바로 옆에 놋쇠 깔때기가 있는데, 물줄기는 깔때기를 살짝 비켜 떨어진다." }
+    ],
+    "fountain_plate": [
+      { "id": "10", "speaker": "luca", "expr": "surprised", "text": "수반 아래 돌판에 Ω 문양이 있어. 오메가 문서를 가까이 대니 글자가 떠오른다. 또 수수께끼야." }
+    ],
+    "ledges_open": [
+      { "id": "10", "speaker": "narrator", "text": "돌판이 물러나고, 물줄기 양옆으로 작은 받침돌이 하나씩 솟아올랐다." },
+      { "id": "20", "speaker": "jjirit", "expr": "neutral", "text": "전기를 안 띤 것도 끌려온다, 이거지? 저 물줄기도 전기는 안 띠었을 텐데…" },
+      { "id": "30", "speaker": "luca", "expr": "happy", "text": "해 보면 알겠지. 받침돌이 두 개니까, 어느 쪽에 설지가 문제야." }
+    ],
+    "fountain_ledges": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "물줄기 왼쪽에 깔때기, 그 양옆에 받침돌. 찌릿을 어느 받침돌에 올릴까?" }
+    ],
+    "stream_wrong_side": [
+      { "id": "10", "speaker": "jjirit", "expr": "surprised", "text": "오, 물줄기가 내 쪽으로 휘었어! …그런데 깔때기는 반대쪽이네." }
+    ],
+    "stairs_open": [
+      { "id": "10", "speaker": "narrator", "text": "물줄기가 찌릿 쪽으로 휘어 깔때기 안으로 떨어졌다. 벽 속에서 그릇이 차오르는 소리가 나더니, 방 한가운데 돌판이 천천히 가라앉아 계단이 되었다." },
+      { "id": "20", "speaker": "luca", "expr": "surprised", "text": "닿지도 않았는데 물이 휘었어. 왜?" },
+      { "id": "30", "speaker": "jjirit", "expr": "happy", "text": "내가 가까이 가면 물속의 작은 전기 알갱이들이 움직여. 나와 같은 전기는 수반 쪽으로 밀려나고, 반대인 전기가 물줄기로 몰려오거든. 그래서 물줄기째 끌려오는 거야." },
+      { "id": "40", "speaker": "luca", "expr": "happy", "text": "세 구슬 수수께끼랑 닮은 이야기구나. 좋아, 내려가 보자." }
+    ],
+    "fountain_done": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "물은 다시 곧게 떨어진다. 그릇은 이미 가득 찼다." }
+    ],
+    "hatch_closed": [
+      { "id": "10", "speaker": "luca", "expr": "neutral", "text": "바닥 한가운데 돌판만 색이 조금 다르다. 밀어도 당겨도 꿈쩍하지 않아." }
+    ]
+  }
+}

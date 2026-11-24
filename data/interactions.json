@@ -1,0 +1,300 @@
+[
+  {
+    "id": "I-JJIRIT-02",
+    "object": "paper_scrap",
+    "object_name": "가벼운 종잇조각",
+    "sparks": [
+      "jjirit"
+    ],
+    "requires": [],
+    "result": "종잇조각이 떠올라 찌릿에게 달라붙는다",
+    "principle": "전기를 띤 물체는 가벼운 물체를 끌어당긴다 (정전기 유도·분극)",
+    "chapter": "prologue",
+    "trigger": "place",
+    "effect": {
+      "type": "set_state",
+      "state": "attracted"
+    },
+    "persistent": true,
+    "fact_check": {
+      "checked": true,
+      "note": "양털로 문지른 호박이 종잇조각을 끌어올리는 것은 실제 현상. 쇠 열쇠처럼 무거운 것은 힘이 모자라 움직이지 않으므로 표에 넣지 않았다(반응 없음).",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-JJIRIT-03",
+    "object": "water_stream",
+    "object_name": "가는 물줄기",
+    "sparks": [
+      "jjirit"
+    ],
+    "requires": [],
+    "result": "가는 물줄기가 찌릿 쪽으로 휜다",
+    "principle": "전기를 띤 물체가 가까이 오면 물줄기에 반대 전기가 유도되어 끌려온다 (정전기 유도)",
+    "chapter": "prologue",
+    "trigger": "place",
+    "effect": {
+      "type": "set_state",
+      "state": "bent_{side}"
+    },
+    "persistent": false,
+    "fact_check": {
+      "checked": true,
+      "note": "전기를 띤 빗·호박을 가는 물줄기에 가까이 대면 물줄기가 그쪽으로 휘는 것은 널리 알려진 실험. 전기가 (+)든 (−)든 끌려온다. 까닭은 물 분자의 극성이 아니라, 수반과 이어진 물에 반대 전하가 유도되어 물줄기가 알짜 전하를 띠기 때문(Ziaei-Moayyed, Goodman, Williams, J. Chem. Educ. 77, 1520, 2000, doi:10.1021/ed077p1520). 휘는 정도는 몇 cm 수준이므로 깔때기는 물줄기 바로 옆에 둔다.",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-LUMI-02",
+    "object": "light_stand",
+    "object_name": "등잔 받침",
+    "sparks": [
+      "lumi"
+    ],
+    "requires": [],
+    "result": "루미가 받침이 향한 쪽으로 곧은 빛줄기를 쏜다",
+    "principle": "빛의 직진",
+    "chapter": 1,
+    "trigger": "place",
+    "effect": {
+      "type": "emit_beam"
+    },
+    "persistent": false,
+    "fact_check": {
+      "checked": true,
+      "note": "빛은 고른 공기 속에서 곧게 나아간다. 루미는 손전등형 랜턴이라 빛을 나란한 줄기로 모아 쏜다고 둔다(굵기는 집광기 렌즈를 가득 채울 만큼).",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-LUMI-03",
+    "object": "mirror",
+    "object_name": "거울",
+    "sparks": [
+      "lumi"
+    ],
+    "requires": [],
+    "result": "빛줄기가 45°로 선 거울에서 직각으로 꺾인다",
+    "principle": "반사의 법칙 (들어간 각 = 나오는 각)",
+    "chapter": 1,
+    "trigger": "beam",
+    "effect": {
+      "type": "reflect"
+    },
+    "persistent": false,
+    "fact_check": {
+      "checked": true,
+      "note": "평면거울의 정반사. 45°로 세운 거울은 빛을 90° 꺾는다.",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-LUMI-04",
+    "object": "light_lock",
+    "object_name": "빛 문양",
+    "sparks": [
+      "lumi"
+    ],
+    "requires": [],
+    "result": "빛줄기를 받은 문양이 켜진다",
+    "principle": "빛을 곧게, 또 거울로 꺾어 원하는 곳까지 보낼 수 있다",
+    "chapter": 1,
+    "trigger": "beam",
+    "effect": {
+      "type": "set_state",
+      "state": "lit",
+      "when_beam": [
+        "plain",
+        "converging",
+        "focused"
+      ]
+    },
+    "persistent": true,
+    "fact_check": {
+      "checked": true,
+      "note": "빛을 받으면 켜지는 문양은 실제 물건이 아니라 이졸데가 만든 봉인 장치라는 설정이다(기획서의 '빛이 닿으면 열리는 문 장치'). 과학 사실로 다루는 것은 빛을 그 자리까지 보내는 방법(직진·반사)뿐이다.",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-LUMI-05",
+    "object": "lens_slot",
+    "object_state": "lens",
+    "object_name": "렌즈 틀 (집광기를 끼운 것)",
+    "sparks": [
+      "lumi"
+    ],
+    "requires": [
+      "convex_lens"
+    ],
+    "result": "빛줄기가 볼록 렌즈를 지나 초점으로 모인다",
+    "principle": "볼록 렌즈의 굴절과 초점",
+    "chapter": 1,
+    "trigger": "beam",
+    "effect": {
+      "type": "focus"
+    },
+    "persistent": false,
+    "fact_check": {
+      "checked": true,
+      "note": "나란한 빛은 볼록 렌즈를 지나 초점에 모이고, 초점을 지나면 다시 퍼진다. 초점 거리는 inventions.json의 focal_cells(칸 수)로 단순하게 했다.",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "I-LUMI-01",
+    "object": "dry_vine",
+    "object_name": "마른 덩굴",
+    "sparks": [
+      "lumi"
+    ],
+    "requires": [
+      "convex_lens"
+    ],
+    "result": "렌즈의 초점에 놓인 마른 덩굴에 빛이 모여 불이 붙는다",
+    "principle": "볼록 렌즈의 집광 (초점에서 빛이 가장 세다)",
+    "chapter": 1,
+    "fact_check": {
+      "checked": true,
+      "note": "햇빛을 볼록 렌즈로 모아 마른 풀·종이에 불을 붙이는 것은 실제 현상. 게임에서는 '루미의 빛줄기는 한낮 햇빛만큼 세고 나란하다'고 가정한다(등불 빛을 렌즈로 모아서는 불이 붙지 않는다). 초점에서만 불이 붙고 앞뒤에서는 붙지 않는다는 것은 수치를 단순하게 한 것. 전제: 빛줄기는 렌즈를 가득 채울 만큼 굵고, 렌즈 지름은 한 뼘 이상(초점 거리의 1/10 이상)이다. 가는 빛줄기나 작은 렌즈로는 모이는 빛이 모자라 불이 붙지 않는다(사실 확인 세션의 계산, 출처 미확인).",
+      "checked_by": "2026-11-10 별도 서브에이전트(사실 확인 전담)"
+    },
+    "status": "reviewed",
+    "trigger": "beam",
+    "effect": {
+      "type": "set_state",
+      "state": "burnt",
+      "when_beam": [
+        "focused"
+      ],
+      "else_state_prefix": "lit_"
+    },
+    "persistent": true
+  },
+  {
+    "id": "I-MAG-01",
+    "object": "iron_box",
+    "object_name": "철제 상자",
+    "sparks": [
+      "mag"
+    ],
+    "requires": [],
+    "result": "상자를 끌어당긴다 (나무 상자는 반응 없음)",
+    "principle": "자석은 철에만 붙는다",
+    "chapter": 3,
+    "fact_check": {
+      "checked": false,
+      "note": "원리 문장 확인 필요: 자석에는 철 말고 니켈·코발트도 붙는다. '나무에는 붙지 않는다' 쪽으로 고칠지 결정"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-HWARO-01",
+    "object": "frozen_door",
+    "object_name": "얼어붙은 문",
+    "sparks": [
+      "hwaro"
+    ],
+    "requires": [],
+    "result": "얼음이 녹아 문이 열린다",
+    "principle": "융해",
+    "chapter": 2,
+    "fact_check": {
+      "checked": false,
+      "note": ""
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-HWARO-02",
+    "object": "water_cauldron",
+    "object_name": "물이 찬 솥",
+    "sparks": [
+      "hwaro"
+    ],
+    "requires": [],
+    "result": "증기가 나와 증기 관을 따라 피스톤을 민다",
+    "principle": "기화와 부피 팽창",
+    "chapter": 2,
+    "fact_check": {
+      "checked": false,
+      "note": ""
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-ULLIM-01",
+    "object": "glass_cup",
+    "object_name": "유리잔",
+    "sparks": [
+      "ullim"
+    ],
+    "requires": [],
+    "result": "고유 진동수가 맞으면 깨진다",
+    "principle": "공명",
+    "chapter": 5,
+    "fact_check": {
+      "checked": false,
+      "note": "기획서 원문은 '유리장'. 유리잔으로 읽었음"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-JJIRIT-01",
+    "object": "paper_scraps",
+    "object_name": "가벼운 종잇조각",
+    "sparks": [
+      "jjirit"
+    ],
+    "requires": [],
+    "result": "조각이 달라붙어 다리가 된다",
+    "principle": "정전기 인력",
+    "chapter": "prologue",
+    "fact_check": {
+      "checked": false,
+      "note": "쓰지 않음. 종잇조각이 사람이 건널 다리가 되는 것은 실제로 일어나지 않는다. 프로토타입에서는 I-JJIRIT-02·03으로 대신했다. 지울지는 사람이 정한다(progress.md '정해야 할 것' 3번)."
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-MULMALLE-01",
+    "object": "wooden_object_in_water",
+    "object_name": "나무 물체 + 물",
+    "sparks": [
+      "mulmalle"
+    ],
+    "requires": [],
+    "result": "수위가 올라 물체가 떠오른다",
+    "principle": "부력",
+    "chapter": 4,
+    "fact_check": {
+      "checked": false,
+      "note": ""
+    },
+    "status": "draft"
+  },
+  {
+    "id": "I-GRAVI-01",
+    "object": "scale_device",
+    "object_name": "저울 장치",
+    "sparks": [
+      "gravi"
+    ],
+    "requires": [],
+    "result": "한쪽이 무거워져 발판이 내려간다",
+    "principle": "무게와 균형",
+    "chapter": 6,
+    "fact_check": {
+      "checked": false,
+      "note": ""
+    },
+    "status": "draft"
+  }
+]

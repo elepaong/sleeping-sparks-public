@@ -1,0 +1,263 @@
+{
+ "data": [
+  "data/dialogue/ch1.json",
+  "data/dialogue/prologue.json",
+  "data/interactions.json",
+  "data/inventions.json",
+  "data/puzzles/D-HEAT-01.json",
+  "data/puzzles/D-LIGHT-01.json",
+  "data/puzzles/D-LIGHT-02.json",
+  "data/puzzles/D-LIGHT-03.json",
+  "data/puzzles/D-LIGHT-04.json",
+  "data/puzzles/D-MAG-01.json",
+  "data/puzzles/D-STATIC-01.json",
+  "data/puzzles/D-STATIC-02.json",
+  "data/sparks.json",
+  "data/strings/ko.json",
+  "data/zones/archive.json",
+  "data/zones/lab.json",
+  "data/zones/scriptorium.json"
+ ],
+ "assets": {
+  "assets/backgrounds/archive.png": [
+   640,
+   360
+  ],
+  "assets/backgrounds/lab.png": [
+   1672,
+   941
+  ],
+  "assets/backgrounds/scriptorium.png": [
+   1672,
+   941
+  ],
+  "assets/chars/luca_idle.png": [
+   96,
+   576
+  ],
+  "assets/chars/luca_walk.png": [
+   384,
+   576
+  ],
+  "assets/portraits/isolde_happy.png": [
+   512,
+   512
+  ],
+  "assets/portraits/isolde_neutral.png": [
+   512,
+   512
+  ],
+  "assets/portraits/isolde_sad.png": [
+   512,
+   512
+  ],
+  "assets/portraits/isolde_surprised.png": [
+   512,
+   512
+  ],
+  "assets/portraits/jjirit_happy.png": [
+   512,
+   512
+  ],
+  "assets/portraits/jjirit_neutral.png": [
+   512,
+   512
+  ],
+  "assets/portraits/jjirit_sad.png": [
+   512,
+   512
+  ],
+  "assets/portraits/jjirit_surprised.png": [
+   512,
+   512
+  ],
+  "assets/portraits/luca_happy.png": [
+   512,
+   512
+  ],
+  "assets/portraits/luca_neutral.png": [
+   512,
+   512
+  ],
+  "assets/portraits/luca_sad.png": [
+   512,
+   512
+  ],
+  "assets/portraits/luca_surprised.png": [
+   512,
+   512
+  ],
+  "assets/props/desk_book.png": [
+   128,
+   96
+  ],
+  "assets/props/dry_vine.png": [
+   32,
+   64
+  ],
+  "assets/props/fountain.png": [
+   96,
+   96
+  ],
+  "assets/props/funnel.png": [
+   32,
+   64
+  ],
+  "assets/props/grate.png": [
+   64,
+   64
+  ],
+  "assets/props/hatch_closed.png": [
+   192,
+   128
+  ],
+  "assets/props/hatch_open.png": [
+   192,
+   128
+  ],
+  "assets/props/ink_drop.png": [
+   32,
+   32
+  ],
+  "assets/props/iron_key.png": [
+   32,
+   32
+  ],
+  "assets/props/lab_arch_open.png": [
+   224,
+   384
+  ],
+  "assets/props/ledge.png": [
+   32,
+   32
+  ],
+  "assets/props/lens_slot_empty.png": [
+   32,
+   32
+  ],
+  "assets/props/lens_slot_lens.png": [
+   32,
+   32
+  ],
+  "assets/props/light_lock_lit.png": [
+   32,
+   32
+  ],
+  "assets/props/light_lock_off.png": [
+   32,
+   32
+  ],
+  "assets/props/light_stand.png": [
+   32,
+   32
+  ],
+  "assets/props/mirror_backslash.png": [
+   32,
+   32
+  ],
+  "assets/props/mirror_slash.png": [
+   32,
+   32
+  ],
+  "assets/props/paper_scrap.png": [
+   32,
+   32
+  ],
+  "assets/props/pillar.png": [
+   64,
+   192
+  ],
+  "assets/props/spout.png": [
+   32,
+   32
+  ],
+  "assets/props/stairs.png": [
+   32,
+   32
+  ],
+  "assets/props/stream_left.png": [
+   640,
+   96
+  ],
+  "assets/props/stream_right.png": [
+   640,
+   96
+  ],
+  "assets/props/stream_straight.png": [
+   640,
+   96
+  ],
+  "assets/props/sunlight_window.png": [
+   96,
+   64
+  ],
+  "assets/props/wool_basket.png": [
+   32,
+   32
+  ],
+  "assets/puzzles/D-LIGHT-01.png": [
+   1200,
+   800
+  ],
+  "assets/puzzles/D-LIGHT-02.png": [
+   1200,
+   800
+  ],
+  "assets/puzzles/D-LIGHT-03.png": [
+   1200,
+   800
+  ],
+  "assets/puzzles/D-LIGHT-04.png": [
+   1200,
+   800
+  ],
+  "assets/puzzles/D-STATIC-01.png": [
+   1200,
+   800
+  ],
+  "assets/puzzles/D-STATIC-02.png": [
+   1200,
+   800
+  ],
+  "assets/sparks/jjirit_burst.png": [
+   192,
+   256
+  ],
+  "assets/sparks/jjirit_card.png": [
+   512,
+   512
+  ],
+  "assets/sparks/jjirit_idle.png": [
+   128,
+   256
+  ],
+  "assets/sparks/lumi_burst.png": [
+   192,
+   256
+  ],
+  "assets/sparks/lumi_card.png": [
+   512,
+   512
+  ],
+  "assets/sparks/lumi_idle.png": [
+   128,
+   256
+  ],
+  "assets/tiles/archive.png": [
+   256,
+   128
+  ],
+  "assets/tiles/archive_arch.png": [
+   64,
+   64
+  ],
+  "assets/tiles/archive_floor.png": [
+   128,
+   32
+  ],
+  "assets/tiles/archive_wall.png": [
+   128,
+   32
+  ]
+ }
+}

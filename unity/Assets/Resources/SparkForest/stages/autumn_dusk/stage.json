@@ -1,0 +1,153 @@
+{
+ "id": "autumn_dusk",
+ "name": "가을 해질녘의 숲",
+ "mood": {
+  "bg": "#8c8a5a",
+  "tint": "#ffe6cf",
+  "haze": "#ff9a5a1a",
+  "shaftColor": "#ffc98a",
+  "shaftAlpha": 0.9,
+  "shaftAngle": 28,
+  "moteColor": "#ffd9a0",
+  "moteCount": 30,
+  "glowColor": "#ffd28a",
+  "glowAlpha": 0.7,
+  "butterflies": 3,
+  "fall": [
+   "gold",
+   "pink",
+   "mint",
+   "mint"
+  ],
+  "fallMin": 0.15,
+  "fallMax": 0.4,
+  "lanternsLit": true
+ },
+ "areas": [
+  {
+   "id": "A",
+   "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ff9a5a1a",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 0.9,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": [
+     "gold",
+     "pink",
+     "mint",
+     "mint"
+    ],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+   }
+  },
+  {
+   "id": "B",
+   "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ff9a5a1a",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 0.9,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": [
+     "gold",
+     "pink",
+     "mint",
+     "mint"
+    ],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+   }
+  },
+  {
+   "id": "C",
+   "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ff9a5a1a",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 0.9,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": [
+     "gold",
+     "pink",
+     "mint",
+     "mint"
+    ],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+   }
+  },
+  {
+   "id": "D",
+   "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ff9a5a1a",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 0.9,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": [
+     "gold",
+     "pink",
+     "mint",
+     "mint"
+    ],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+   }
+  },
+  {
+   "id": "E",
+   "mood": {
+    "bg": "#8c8a5a",
+    "tint": "#ffe6cf",
+    "haze": "#ffd0a00d",
+    "shaftColor": "#ffc98a",
+    "shaftAlpha": 1.0,
+    "shaftAngle": 28,
+    "moteColor": "#ffd9a0",
+    "moteCount": 30,
+    "glowColor": "#ffd28a",
+    "glowAlpha": 0.7,
+    "butterflies": 3,
+    "fall": [
+     "gold",
+     "pink",
+     "mint",
+     "mint"
+    ],
+    "fallMin": 0.15,
+    "fallMax": 0.4,
+    "lanternsLit": true
+   }
+  }
+ ]
+}
